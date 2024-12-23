@@ -11,7 +11,7 @@ def medianSlidingWindow( nums: List[int], k: int) -> List[float]:
             if k % 2 == 1:
                 result.append(window[k // 2])
             else:
-                result.append((window[k // 2] + window[k // 2]) / 2)
+                result.append((window[k // 2 - 1] + window[k // 2]) / 2)
         
         return result
 
