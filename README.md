@@ -1,44 +1,27 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Dividir e Conquistar - LeetCode - Dupla 56
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 3<br>
+**Conteúdo da Disciplina**: Dividir e Conquistar<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 20/0015753  |  [Caio Berg Carlos Leite](https://github.com/Caio-bergbjj) |
+| 20/0028154 |  [Thiago Ribeiro Freitas](https://github.com/thiagorfreitas) |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este projeto consiste na resolução de problemas de Dividir e Conquistar do LeetCode, para a disciplina de Projeto de Algoritmos, da Universidade de Brasília.
+
+### Problemas
+
+|Problema | Descrição | Dificuldade| Contribuidores
+| -- | -- | -- | -- |
+| 2608  |  [Problema 1](https://leetcode.com/problems/problema 1) | Easy | Caio Berg e Thiago Ribeiro |
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+### Problema 1
+![Problema 1](./Problema 1.png)
 
 
 
