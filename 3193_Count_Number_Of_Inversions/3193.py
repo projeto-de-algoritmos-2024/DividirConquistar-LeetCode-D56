@@ -1,14 +1,12 @@
 class Solution:
-    def __init__(self):  # Corrige o nome do método para __init__
-        self.dp = {}  # Dicionário para armazenar os resultados já calculados (memoização)
-        self.mod = int(1e9 + 7)  # Constante para realizar operações de módulo
+    def __init__(self):  
+        self.dp = {} 
+        self.mod = int(1e9 + 7) 
 
     def solve(self, indice, tamanho, mapa_requisitos, contador):
-        # Caso base: se já colocamos todos os números, temos uma permutação válida
         if indice == tamanho:
             return 1
 
-        # Se o contador excede 400, nenhuma permutação válida é possível
         if contador > 400:
             return 0
 
@@ -18,9 +16,9 @@ class Solution:
 
         total_permutacoes = 0
 
-        # Tenta posicionar números de contador até contador + indice
+        # Para cada número no intervalo [contador, contador + indice + 1]
         for numero in range(contador, contador + indice + 1):
-            # Verifica se o índice atual possui um requisito estrito
+
             if indice in mapa_requisitos and mapa_requisitos[indice] != numero:
                 continue
 
