@@ -24,3 +24,7 @@ A mediana é definida como:
 - `1 <= k <= nums.length <= 10^5`
 - Cada valor em `nums` está dentro do intervalo de 32 bits para inteiros.
 - Deve-se garantir eficiência na atualização da mediana a cada passo da janela.
+
+
+> **Nota**: Caso deseje o texto integral ou mais detalhes, consulte a  
+> [página do problema no LeetCode](https://leetcode.com/problems/sliding-window-median/description/).
