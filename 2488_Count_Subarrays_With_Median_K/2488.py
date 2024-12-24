@@ -1,28 +1,29 @@
-from typing import List
+from collections import defaultdict
 
 
 def countSubarrays( nums, k):
-    def F_brute(nums, x):
-        n = len(nums)
-        cnt = 0
-        for start in range(n):
-            for end in range(start, n):
-                arr = sorted(nums[start:end+1])
-                length = end - start + 1
-                mid_index = length // 2
-                
-                if length % 2 == 1:
-                    median = arr[mid_index]
-                else:
-                    # Para par, o problema define mediana como
-                    # o MENOR dos dois do meio
-                    median = arr[mid_index - 1]
-                
-                # Agora, se mediana <= x, incrementa
-                if median <= x:
-                    cnt += 1
-        return cnt
-    return F_brute(nums, k) - F_brute(nums, k-1)
+    def count_med(nums, x):
+        arr = [1 if val <= x else -1 for val in nums]
+
+        prefix_sum = 0
+        prefix_counts = defaultdict(int)
+        prefix_counts[0] = 1  # prefix sum antes de começar
+        
+        #Um subarray  tem mediana ≤ 𝑥 se ao menos metade dos elementos são ≤ 𝑥
+        
+        count = 0
+        for num in arr:
+            prefix_sum += num
+
+            c = 0
+            for ps_val, how_many in prefix_counts.items():
+                if ps_val <= prefix_sum:
+                    c += how_many
+            count += c
+            prefix_counts[prefix_sum] += 1
+        
+        return count
+    return count_med(nums, k) - count_med(nums, k-1)
 
 nums = [3,2,1,4,5]
 k = 4
