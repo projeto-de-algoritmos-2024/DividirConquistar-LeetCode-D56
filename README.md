@@ -16,12 +16,12 @@ Este projeto consiste na resolução de problemas de Dividir e Conquistar do Lee
 
 |Problema | Descrição | Dificuldade| Contribuidores
 | -- | -- | -- | -- |
-| 2608  |  [Problema 1](https://leetcode.com/problems/problema 1) | Easy | Caio Berg e Thiago Ribeiro |
+| 3193  |  [Count the Number of Inversions](https://leetcode.com/problems/count-the-number-of-inversions/)| Hard | [Thiago Freitas](https://github.com/thiagorfreitas) |
 
 ## Screenshots
 
-### Problema 1
-![Problema 1](./Problema 1.png)
+### Count the Number of Inversions
+![3193 Solved](/3193_Count_Number_Of_Inversions/3193_SOLVED.png)
 
 
 
