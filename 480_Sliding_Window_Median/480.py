@@ -11,7 +11,7 @@ def medianSlidingWindow( nums: List[int], k: int) -> List[float]:
         
         # Se exceder o tamanho k, removemos o elemento antigo
         if i >= k:
-            sl.remove(nums[i - k + 1])  # <--- ERRO
+            sl.remove(nums[i - k])
 
         # Quando atingimos pelo menos k elementos, calculamos a mediana
         if i >= k - 1:
