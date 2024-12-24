@@ -35,11 +35,21 @@ As inversões são:
 6. (2, 1)
 
 **Explicação:**  
-
+Não há inversões porque o array está ordenado.
 
 ### Restrições
 
-
+- \( 1  <= nums.length  <= 100,000 \)
+- \( -10^9  <= nums[i]  <= 10^9 \)
 
 ## Solução
 
+Para resolver o problema de forma eficiente, utilizamos uma abordagem baseada no **Merge Sort. Esse algoritmo divide o array em subarrays menores e os ordena, contando as inversões durante o processo de mesclagem.
+
+1. **Condições para uma inversão**:
+   - Se um elemento do lado direito do array for menor que um elemento do lado esquerdo, todos os elementos restantes no lado esquerdo formam inversões com ele.
+
+2. **Passos principais**:
+   - Dividir o array em subarrays menores usando recursão.
+   - Contar as inversões dentro de cada subarray.
+   - Contar as inversões entre os subarrays durante o processo de mesclagem.
